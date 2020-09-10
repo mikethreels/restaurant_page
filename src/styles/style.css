@@ -1,3 +1,74 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eeebe6;
+}
+
+.nav_link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .nav_link:hover {
   cursor: pointer;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px ;
+
+}
+
+header {
+  padding: 2vh;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.landing,
+.menu,
+.contact {
+  width: 95vw;
+  height: 85vh;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.landing::after,
+.contact::after,
+.menu::after {
+  content: "";
+  background: url(../images/landing.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.contact::after {
+  background: url(../images/test.jpg);  
+}
+
+.menu::after {
+  background: url(../images/menu.jpg);
+}
+
+li {
+  display: flex;
+}
+
+li p {
+  margin: 0 10px;
 }

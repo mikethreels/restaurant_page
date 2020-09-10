@@ -4,6 +4,8 @@ const loadpage = () => {
   while (contentdiv.firstChild) {
     contentdiv.removeChild(contentdiv.firstChild);
   }
+  contentdiv.className = "";
+  contentdiv.classList.add('landing');
   const img = document.createElement('img');
   const head = document.createElement('h1');
   const text = document.createElement('p');
@@ -12,7 +14,7 @@ const loadpage = () => {
   text.innerHTML = 'because we always use fresh ingredients our products will taste the best';
   contentdiv.append(head);
   contentdiv.append(text);
-  contentdiv.append(img);
+
 }
 
 export default loadpage;
