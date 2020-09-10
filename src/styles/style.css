@@ -1,3 +1,3 @@
-#content {
-  color: purple;
+.nav_link:hover {
+  cursor: pointer;
 }
