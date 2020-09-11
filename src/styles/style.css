@@ -24,8 +24,9 @@ header {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
+  margin: 40px;
 }
 
 h2 {
@@ -33,14 +34,17 @@ h2 {
   font-weight: 600;
 }
 
+
 .landing,
 .menu,
 .contact {
   width: 95vw;
   height: 85vh;
-  display: block;
+  display: flex;
   position: relative;
   margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .landing::after,
@@ -55,6 +59,44 @@ h2 {
   right: 0;
   position: absolute;
   z-index: -1;   
+}
+
+.loadpage_img_container img {
+  max-height: 50vh;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.landing p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.menu div {
+  display: flex;
+  justify-content: center;
+}
+
+.Drinks {
+  grid-column: 1 / -1;
+}
+
+.contact h2 {
+  margin-bottom: 80px;
+}
+
+.contact p {
+  font-size: 30px;
 }
 
 .contact::after {

@@ -16,9 +16,10 @@ const menupage = () => {
 
   const createChapter = (header, item, numitems, price) => {
     console.log('create chapter')
+    const chapter_cont = document.createElement('div');
     const chapterhead = document.createElement('h2');
     const ul = document.createElement('ul');
-    
+    chapter_cont.className = header;
     chapterhead.innerHTML = header;
     for (let i = 0; i < numitems; i++) {
       (function() {
@@ -32,13 +33,14 @@ const menupage = () => {
         ul.append(li);
       })()
     }
-    contentdiv.append(chapterhead);
-    contentdiv.append(ul);
+    chapter_cont.append(chapterhead);
+    chapter_cont.append(ul);
+    contentdiv.append(chapter_cont)
   }
 
-  createChapter('Breakfast', 'Croissant', 15, '5 Euro')
+  createChapter('Breakfast', 'Croissant', 10, '5 Euro')
   createChapter('Brunch', 'Baquette', 10, '10 Euro')
-  createChapter('Drinks', 'Coffee', 5, '3 Euro')
+  createChapter('Drinks', 'Coffee', 10, '3 Euro')
 
 }
 

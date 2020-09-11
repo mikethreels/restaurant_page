@@ -1,5 +1,5 @@
-import contactpage from './contact';
+import loadpage from './landing';
 import navBar from './nav';
 
 navBar();
-contactpage();
+loadpage();
