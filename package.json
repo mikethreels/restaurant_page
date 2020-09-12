@@ -1,0 +1,32 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "This is a restaurant page project with as main goal main goal to show the understanding of the benefits of modularized code as well as the ability to set up a JavaScript application made of different modules using Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikethreels/restaurant_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikethreels/restaurant_page/issues"
+  },
+  "homepage": "https://github.com/mikethreels/restaurant_page#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
